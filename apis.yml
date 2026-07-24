@@ -1,7 +1,24 @@
 aid: closure
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/closure.png
 name: Closure
-description: 'Closure is a company surfaced as a portfolio company of crv and added to the API Evangelist
-  network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Closure (Closure Intelligence, Inc.) builds an AI-powered digital analyst
+  platform for law enforcement agencies that securely transcribes, translates, searches,
+  organizes, and analyzes case evidence — jail communications, warrant returns, and
+  large multi-lingual case files — to help investigators overcome evidence overload
+  and resolve homicides and cold cases. The platform runs under a zero-access security
+  model with SOC 2 Type II, CJIS, and HIPAA compliance. Backed by CRV. No public API
+  or developer program is currently published.'
 url: https://raw.githubusercontent.com/api-evangelist/closure/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +26,20 @@ x-backed-by:
 - crv
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-sector-correction: 'Surfaced as fintech via CRV portfolio; actual sector is public-safety
+  / law-enforcement AI (govtech), not fintech.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-- Fintech
+- Artificial Intelligence
+- Law Enforcement
+- Public Safety
+- Evidence Analysis
+- GovTech
+- Security
+- Compliance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +47,19 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/closure-trust-center.yml
+- type: Compliance
+  url: security/closure-trust-center.yml
+- type: DomainSecurity
+  url: security/closure-domain-security.yml
+- type: TrustCenter
+  name: Trust Center
+  url: https://trust.closure-intel.com/
 - type: Website
   url: https://www.closure-intel.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

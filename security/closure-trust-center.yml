@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: searched
+probe: true
+source: https://trust.closure-intel.com/
+url: https://trust.closure-intel.com/
+also_documented: https://www.closure-intel.com/trust
+certifications:
+- SOC 2 Type II
+- CJIS
+- HIPAA
+posture:
+- Zero-access model — employees cannot access customer data by default; support access requires explicit customer authorization.
+- AES-256 encryption at rest; HTTPS/TLS 1.2+ in transit; FIPS 140-3 generated keys.
+- Role-Based Access Control, SSO, MFA, and account segregation following CJIS standards.
+- Comprehensive, auditable logging of all user actions and data access.
+- Compliance posture validated by independent third parties via penetration tests and audits.
+evidence:
+- source: https://trust.closure-intel.com/
+  keywords:
+  - soc 2 type ii
+  - cjis
+  - hipaa
+  - trust center
+  - compliance certification
+- source: https://www.closure-intel.com/trust
+  keywords:
+  - soc 2 type ii
+  - cjis
+  - hipaa
+  - fips 140-3
